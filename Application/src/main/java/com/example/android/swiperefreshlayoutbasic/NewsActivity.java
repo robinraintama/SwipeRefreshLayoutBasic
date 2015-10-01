@@ -29,6 +29,8 @@ import com.example.android.common.logger.Log;
 import com.example.android.common.logger.LogFragment;
 import com.example.android.common.logger.LogWrapper;
 import com.example.android.common.logger.MessageOnlyLogFilter;
+import com.facebook.appevents.AppEventsConstants;
+import com.facebook.appevents.AppEventsLogger;
 import com.google.ads.conversiontracking.AdWordsRemarketingReporter;
 
 import java.util.HashMap;
@@ -70,17 +72,16 @@ public class NewsActivity extends SampleActivityBase {
                 getApplicationContext(),
                 "941816430",
                 params);
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-//        AppEvent.activateApp(this);
-    }
+        AppEventsLogger logger = AppEventsLogger.newLogger(this);
+        Bundle parameters = new Bundle();
+        parameters.putString(AppEventsConstants.EVENT_PARAM_CURRENCY, "INA");
+        parameters.putString(AppEventsConstants.EVENT_PARAM_CONTENT_TYPE, "product");
+        parameters.putString(AppEventsConstants.EVENT_PARAM_CONTENT_ID, "HDFU-8452");
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+        logger.logEvent(AppEventsConstants.EVENT_NAME_VIEWED_CONTENT,
+                1000,
+                parameters);
     }
 
     @Override
@@ -133,5 +134,18 @@ public class NewsActivity extends SampleActivityBase {
         msgFilter.setNext(logFragment.getLogView());
 
         Log.i(TAG, "Ready");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+//        AppEvent.activateApp(this);
+        AppEventsLogger.activateApp(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        AppEventsLogger.deactivateApp(this);
     }
 }

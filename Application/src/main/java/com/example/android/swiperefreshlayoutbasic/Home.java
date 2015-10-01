@@ -17,6 +17,9 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.android.common.adapter.HomeAdapter;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsConstants;
+import com.facebook.appevents.AppEventsLogger;
 import com.google.ads.conversiontracking.AdWordsConversionReporter;
 
 
@@ -35,7 +38,9 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_home);
+
         ll_bar = (LinearLayout) findViewById(R.id.ll_bar);
 
         lv = (ListView) findViewById(R.id.lv);
@@ -62,6 +67,17 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
         AdWordsConversionReporter.reportWithConversionId(this.getApplicationContext(),
                 "941816430", "TB8UCJaVkmAQ7vSLwQM", "1000.00", true);
 
+
+
+        AppEventsLogger logger = AppEventsLogger.newLogger(this);
+        Bundle parameters = new Bundle();
+        parameters.putString(AppEventsConstants.EVENT_NAME_VIEWED_CONTENT, "HOME");
+        parameters.putString(AppEventsConstants.EVENT_PARAM_CONTENT_TYPE, "product");
+        parameters.putString(AppEventsConstants.EVENT_PARAM_CONTENT_ID, "HDFU-8452");
+
+        logger.logEvent(AppEventsConstants.EVENT_NAME_VIEWED_CONTENT,
+                1000,
+                parameters);
     }
 
     @Override
@@ -122,5 +138,18 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         startActivity(new Intent(this, NewsActivity.class));
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+//        AppEvent.activateApp(this);
+        AppEventsLogger.activateApp(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        AppEventsLogger.deactivateApp(this);
     }
 }

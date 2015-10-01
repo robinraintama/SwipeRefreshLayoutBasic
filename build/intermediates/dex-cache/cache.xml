@@ -2,25 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/jars/classes.jar"
+        jar="/Users/Sola_MBP/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="bb0ac3f3ee2d71854501cc28e52cc84a20209b41">
-        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-73a6e600bf3fcb2549377eac49dd85ba6080861c.jar" />
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-df29c90a29385aa5b292db73424a73d9abee5852.jar" />
     </item>
     <item
-        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-12a2e8a58dd9d77b93d7921a1fd0a0d8cae4fcf8.jar" />
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-9dada03d5b00c5b5d136b42369685ba6c01be1ba.jar" />
     </item>
     <item
-        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/libs/internal_impl-23.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-da05f4eb08bbd8dacb86c4d22fd8771e17f91b1a.jar" />
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-90d5317af62cd93a29ae9ae2d54215f3d7630ebf.jar" />
+    </item>
+    <item
+        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-600ae8adb2cd7e1b569d43f6c502b646213f2b7f.jar" />
+    </item>
+    <item
+        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb0ac3f3ee2d71854501cc28e52cc84a20209b41">
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-8e8e5ee76495b8f85212305aa91ab1646b8cc4f0.jar" />
+    </item>
+    <item
+        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-13e7b5ad2efde4f65a097d79eb407e3c089dbab3.jar" />
+    </item>
+    <item
+        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-7caf59ab44d081121040bcc2c6f370b4905a8d30.jar" />
     </item>
     <item
         jar="/Users/Sola_MBP/Documents/Workshop/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
@@ -28,20 +56,6 @@
         revision="22.0.1"
         sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
         <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-1ddb335f36dcd9a1a07af63f7886e7b44061cc63.jar" />
-    </item>
-    <item
-        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/jars/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
-        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-dac83c858b00733f94039faf25082cdb21dfc975.jar" />
-    </item>
-    <item
-        jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-68dc017dd89423076351698258849c70853d24f3.jar" />
     </item>
     <item
         jar="/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/GoogleConversionTrackingSdk-2.2.4/GoogleConversionTrackingSdk-2.2.4.jar"
