@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Application" />
+            <option value="$PROJECT_DIR$/GoogleConversionTrackingSdk-2.2.4" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoogleConversionTrackingSdk-2.2.4/GoogleConversionTrackingSdk-2.2.4.iml" filepath="$PROJECT_DIR$/GoogleConversionTrackingSdk-2.2.4/GoogleConversionTrackingSdk-2.2.4.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwipeRefreshLayoutBasic.iml" filepath="$PROJECT_DIR$/SwipeRefreshLayoutBasic.iml" />
     </modules>
   </component>

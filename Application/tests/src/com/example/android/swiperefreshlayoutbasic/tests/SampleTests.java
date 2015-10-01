@@ -26,15 +26,15 @@ import android.view.Gravity;
 /**
  * Tests for SwipeRefreshLayoutBasic sample.
  */
-public class SampleTests extends ActivityInstrumentationTestCase2<MainActivity> {
+public class SampleTests extends ActivityInstrumentationTestCase2<NewsActivity> {
 
-    private MainActivity mTestActivity;
+    private NewsActivity mTestActivity;
     private SwipeRefreshLayoutBasicFragment mTestFragment;
 
     private SwipeRefreshLayout mSwipeRefreshLayout;
 
     public SampleTests() {
-        super(MainActivity.class);
+        super(NewsActivity.class);
     }
 
     @Override

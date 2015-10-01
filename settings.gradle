@@ -1,1 +1,1 @@
-include 'Application'
+include 'Application', ':GoogleConversionTrackingSdk-2.2.4'

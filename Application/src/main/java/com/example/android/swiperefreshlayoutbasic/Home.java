@@ -11,13 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.android.common.adapter.HomeAdapter;
+import com.google.ads.conversiontracking.AdWordsConversionReporter;
 
 
 public class Home extends Activity implements AbsListView.OnScrollListener, AdapterView.OnItemClickListener{
@@ -52,6 +52,15 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
 
         lv.setOnScrollListener(this);
         lv.setOnItemClickListener(this);
+
+        // Product
+        // Google Android in-app conversion tracking snippet
+        // Add this code to the event you'd like to track in your app.
+        // See code examples and learn how to add advanced features like app deep links at:
+        // https://developers.google.com/app-conversion-tracking/android/#track_in-app_events_driven_by_advertising
+
+        AdWordsConversionReporter.reportWithConversionId(this.getApplicationContext(),
+                "941816430", "TB8UCJaVkmAQ7vSLwQM", "1000.00", true);
 
     }
 
@@ -112,6 +121,6 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, NewsActivity.class));
     }
 }
