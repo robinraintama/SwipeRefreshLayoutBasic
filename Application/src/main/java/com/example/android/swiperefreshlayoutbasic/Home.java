@@ -143,13 +143,12 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
     @Override
     protected void onPause() {
         super.onPause();
-//        AppEvent.activateApp(this);
-        AppEventsLogger.activateApp(this);
+        AppEventsLogger.deactivateApp(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        AppEventsLogger.deactivateApp(this);
+        AppEventsLogger.activateApp(this);
     }
 }

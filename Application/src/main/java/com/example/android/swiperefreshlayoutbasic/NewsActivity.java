@@ -29,6 +29,7 @@ import com.example.android.common.logger.Log;
 import com.example.android.common.logger.LogFragment;
 import com.example.android.common.logger.LogWrapper;
 import com.example.android.common.logger.MessageOnlyLogFilter;
+import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsConstants;
 import com.facebook.appevents.AppEventsLogger;
 import com.google.ads.conversiontracking.AdWordsRemarketingReporter;
@@ -53,6 +54,7 @@ public class NewsActivity extends SampleActivityBase {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         getWindow().requestFeature(Window.FEATURE_PROGRESS);
         setContentView(R.layout.activity_main);
 
@@ -139,13 +141,12 @@ public class NewsActivity extends SampleActivityBase {
     @Override
     protected void onPause() {
         super.onPause();
-//        AppEvent.activateApp(this);
-        AppEventsLogger.activateApp(this);
+        AppEventsLogger.deactivateApp(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        AppEventsLogger.deactivateApp(this);
+        AppEventsLogger.activateApp(this);
     }
 }
