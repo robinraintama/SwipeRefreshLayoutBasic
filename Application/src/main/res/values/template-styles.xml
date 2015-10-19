@@ -29,6 +29,9 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+
+    <style name="NewsTheme" parent="android:Theme.Holo.Light">
+    </style>
     <!-- Widget styling -->
 
     <style name="Widget" />

@@ -21,5 +21,13 @@
           android:id="@+id/menu_refresh"
           android:title="@string/menu_refresh"
           android:showAsAction="never" />
+    <item
+          android:id="@+id/menu_text_size"
+          android:title="Size"
+          android:showAsAction="never" />
+    <item
+          android:id="@+id/menu_share"
+          android:title="Share"
+          android:showAsAction="never" />
 
 </menu>

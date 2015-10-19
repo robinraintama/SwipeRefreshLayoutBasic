@@ -55,7 +55,9 @@ public class NewsActivity extends SampleActivityBase {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
-        getWindow().requestFeature(Window.FEATURE_PROGRESS);
+//        getWindow().requestFeature(Window.FEATURE_PROGRESS);
+//        setProgressBarVisibility(true);
+
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
@@ -148,5 +150,11 @@ public class NewsActivity extends SampleActivityBase {
     protected void onResume() {
         super.onResume();
         AppEventsLogger.activateApp(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
     }
 }

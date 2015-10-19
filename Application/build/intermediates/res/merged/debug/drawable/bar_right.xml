@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@android:color/transparent"
+        android:centerColor="#FF4a39bb"
+        android:endColor="#FF4a39bb"
+        android:cacheColorHint="#00000000"
+        />
+</shape><!-- From: file:/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/src/main/res/drawable/bar_right.xml -->

@@ -23,6 +23,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="app_id">APP_ID</string>
+    <string name="app_id">884125951676708</string>
+    <string name="title_activity_home_with_tab">HomeWithTab</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tracker">Tracker</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <corners
+        android:radius="50dp" />
+    <solid
+        android:color="#FFD0D5D2" />
+    <stroke
+        android:width="5dp"
+        android:color="#FFD0D5D2" />
+
+</shape><!-- From: file:/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/src/main/res/drawable-xxhdpi/border_list_home.xml -->
