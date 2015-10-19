@@ -48,7 +48,7 @@ import java.util.Date;
 import java.util.Vector;
 
 
-public class Home extends Activity implements AbsListView.OnScrollListener, AdapterView.OnItemClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+public class Home extends Activity implements AbsListView.OnScrollListener, AdapterView.OnItemClickListener{
 
     private int lastTopValue = 0;
     private int lastAlphaValue = 0;
@@ -62,12 +62,6 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
     private ImageView iv_bar;
     private View first;
     private ViewPager vf;
-
-    private GoogleApiClient mGoogleApiClient;
-    private Location mLastLocation;
-    private Location mCurrentLocation;
-    private String mLastUpdateTime;
-    private LocationRequest mLocationRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,13 +124,6 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
         logger.logEvent(AppEventsConstants.EVENT_NAME_VIEWED_CONTENT,
                 1000,
                 parameters);
-
-        createLocationRequest();
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
-                .addApi(LocationServices.API)
-                .build();
     }
 
     @Override
@@ -264,19 +251,6 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
 
     }
 
-    protected void createLocationRequest() {
-        mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(10000);
-        mLocationRequest.setFastestInterval(5000);
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-    }
-
-    protected void startLocationUpdates() {
-        PendingResult<Status> pendingResult = LocationServices.FusedLocationApi.requestLocationUpdates(
-                mGoogleApiClient, mLocationRequest, this);
-        System.out.println("Home.startLocationUpdates");
-    }
-
     protected void track(Location mCurrentLocation) {
         if (mCurrentLocation != null) {
             System.out.println("mCurrentLocation.getProvider() = " + mCurrentLocation.getProvider());
@@ -288,25 +262,11 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
         }
     }
 
-    protected void stopLocationUpdates() {
-        LocationServices.FusedLocationApi.removeLocationUpdates(
-                mGoogleApiClient, this);
-        System.out.println("Home.stopLocationUpdates");
-    }
-
-    @Override
-    public void onLocationChanged(Location location) {
-        System.out.println("Home.onLocationChanged");
-        mCurrentLocation = location;
-        mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
-        track(mCurrentLocation);
-    }
-
     @Override
     protected void onPause() {
         super.onPause();
         AppEventsLogger.deactivateApp(this);
-        stopLocationUpdates();
+//        MyApp.mApp.stopLocationUpdates();
     }
 
     @Override
@@ -314,45 +274,30 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
         super.onResume();
         AppEventsLogger.activateApp(this);
 
-        if (mGoogleApiClient.isConnected()) {
-            startLocationUpdates();
+        if (MyApp.mApp.mGoogleApiClient.isConnected()) {
+            MyApp.mApp.startLocationUpdates();
             System.out.println("Location resume");
         }
     }
 
     @Override
-    public void onConnected(Bundle bundle) {
-        startLocationUpdates();
-    }
-
-    @Override
-    public void onConnectionSuspended(int i) {
-        System.out.println("Home.onConnectionSuspended");
-        System.out.println("i = " + i);
-    }
-
-    @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        startActivity(new Intent(this, NewsActivity.class));
-
-    }
-
-    @Override
-    public void onConnectionFailed(ConnectionResult connectionResult) {
-        System.out.println("Home.onConnectionFailed");
-        System.out.println("connectionResult.getErrorMessage() = " + connectionResult.getErrorMessage());
+//        startActivity(new Intent(this, NewsActivity.class));
+        startActivity(new Intent(this, Tracker.class));
     }
 
 
     @Override
     protected void onStop() {
         super.onStop();
-        mGoogleApiClient.disconnect();
+//        MyApp.mApp.mGoogleApiClient.disconnect();
+        System.out.println("Home.onStop");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        mGoogleApiClient.connect();
+        MyApp.mApp.mGoogleApiClient.connect();
+        System.out.println("Home.onStart");
     }
 }

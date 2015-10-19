@@ -55,13 +55,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="1.7">
               <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
               <folding>
                 <element signature="e#1618#1636#0" expanded="true" />
+                <element signature="e#2697#2729#0" expanded="true" />
+                <element signature="e#3371#3396#0" expanded="true" />
+                <element signature="e#3486#3515#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,12 +73,9 @@
       <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.7777777">
-              <caret line="273" column="14" selection-start-line="273" selection-start-column="14" selection-end-line="277" selection-end-column="5" />
-              <folding>
-                <element signature="e#11099#11100#0" expanded="true" />
-                <element signature="e#11137#11138#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-9.0">
+              <caret line="297" column="21" selection-start-line="297" selection-start-column="19" selection-end-line="297" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,8 +84,11 @@
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Tracker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding />
+              <caret line="30" column="118" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
+              <folding>
+                <element signature="e#668#1235#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,22 +106,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/MyApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73333335">
-              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-              <folding />
+              <caret line="129" column="97" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="97" />
+              <folding>
+                <element signature="e#4938#4939#0" expanded="true" />
+                <element signature="e#4976#4977#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1869,10 +1865,10 @@
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/header_news.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Application/build.gradle" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Home.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/MyApp.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_tracker.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Tracker.java" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/MyApp.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Home.java" />
       </list>
     </option>
   </component>
@@ -2349,6 +2345,9 @@
           <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding>
             <element signature="e#1618#1636#0" expanded="true" />
+            <element signature="e#2697#2729#0" expanded="true" />
+            <element signature="e#3371#3396#0" expanded="true" />
+            <element signature="e#3486#3515#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2357,10 +2356,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
-          <folding>
-            <element signature="e#11099#11100#0" expanded="true" />
-            <element signature="e#11137#11138#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2631,16 +2627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding>
-            <element signature="e#1618#1636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/debug/res/values/google_maps_api.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2654,6 +2640,17 @@
         <state vertical-scroll-proportion="-0.33333334">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/MyApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="97" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="97" />
+          <folding>
+            <element signature="e#4938#4939#0" expanded="true" />
+            <element signature="e#4976#4977#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2671,27 +2668,32 @@
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Tracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
+          <caret line="30" column="118" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
+          <folding>
+            <element signature="e#668#1235#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7777777">
-          <caret line="273" column="14" selection-start-line="273" selection-start-column="14" selection-end-line="277" selection-end-column="5" />
-          <folding>
-            <element signature="e#11099#11100#0" expanded="true" />
-            <element signature="e#11137#11138#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="297" column="21" selection-start-line="297" selection-start-column="19" selection-end-line="297" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/swiperefreshlayoutbasic/MyApp.java">
+    <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73333335">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="1.7">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="e#1618#1636#0" expanded="true" />
+            <element signature="e#2697#2729#0" expanded="true" />
+            <element signature="e#3371#3396#0" expanded="true" />
+            <element signature="e#3486#3515#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
