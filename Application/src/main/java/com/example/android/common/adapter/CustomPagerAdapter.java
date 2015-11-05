@@ -1,4 +1,4 @@
-package com.example.android.swiperefreshlayoutbasic;
+package com.example.android.common.adapter;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;

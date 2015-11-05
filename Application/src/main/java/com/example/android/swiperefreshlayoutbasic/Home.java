@@ -283,7 +283,10 @@ public class Home extends Activity implements AbsListView.OnScrollListener, Adap
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //        startActivity(new Intent(this, NewsActivity.class));
-        startActivity(new Intent(this, Tracker.class));
+        if (position == 1) startActivity(new Intent(this, NewsActivity.class));
+        else if (position == 2) startActivity(new Intent(this, Tracker.class));
+        else if (position == 3) startActivity(new Intent(this, Chart.class));
+        else startActivity(new Intent(this, ListAlphabet.class));
     }
 
 

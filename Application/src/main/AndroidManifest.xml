@@ -66,6 +66,14 @@
             android:name=".Tracker"
             android:label="@string/title_activity_tracker" >
         </activity>
+        <activity
+            android:name=".Chart"
+            android:label="@string/title_activity_chart" >
+        </activity>
+        <activity
+            android:name=".ListAlphabet"
+            android:label="@string/title_activity_listalphabet" >
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

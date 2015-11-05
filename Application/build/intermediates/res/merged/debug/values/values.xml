@@ -465,8 +465,10 @@
     <string name="store_picture_title">Save image</string>
     <!-- From: file:/Users/Sola_MBP/Github/SwipeRefreshLayoutBasic/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_chart">Chart</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_home_with_tab">HomeWithTab</string>
+    <string name="title_activity_listalphabet">List</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_tracker">Tracker</string>
